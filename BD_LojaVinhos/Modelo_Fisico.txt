@@ -1,0 +1,33 @@
+
+CREATE SCHEMA IF NOT EXISTS `LojaVinhos` DEFAULT CHARACTER SET utf8 ;
+USE `LojaVinhos` ;
+
+CREATE TABLE IF NOT EXISTS `LojaVinhos`.`Regiao` (
+  `codRegiao` BIGINT NOT NULL,
+  `nomeRegiao` VARCHAR(100) NOT NULL,
+  `descricaoRegiao` TEXT NULL,
+  PRIMARY KEY (`codRegiao`));
+
+CREATE TABLE IF NOT EXISTS `LojaVinhos`.`Vinicula` (
+  `codVinicola` BIGINT NOT NULL,
+  `nomeVinicola` VARCHAR(100) NOT NULL,
+  `decricaoVinicola` TEXT NULL,
+  `foneVinicola` VARCHAR(15) NULL,
+  `emailVinicola` VARCHAR(15) NULL,
+  `codRegiao` BIGINT NOT NULL,
+  PRIMARY KEY (`codVinicola`),
+    FOREIGN KEY (`codRegiao`)
+    REFERENCES `LojaVinhos`.`Regiao` (`codRegiao`));
+
+
+CREATE TABLE IF NOT EXISTS `LojaVinhos`.`Vinho` (
+  `codVinho` BIGINT NOT NULL,
+  `nomeVinho` VARCHAR(50) NOT NULL,
+  `tipoVinho` VARCHAR(30) NOT NULL,
+  `anoVinho` INT NOT NULL,
+  `descricaoVinho` TEXT NULL,
+  `codVinicola` BIGINT NOT NULL,
+  PRIMARY KEY (`codVinho`),
+    FOREIGN KEY (`codVinicola`)
+    REFERENCES `LojaVinhos`.`Vinicula` (`codVinicola`));
+

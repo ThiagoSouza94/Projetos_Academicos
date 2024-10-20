@@ -1,0 +1,3 @@
+create user Somellier@"localhost" with max_connections_per_hour 40;
+grant select on lojavinhos.Vinho to Somellier@"localhost";
+grant select(codVinicola,nomeVinicola) on lojavinhos.Vinicola to Somellier@"localhost";

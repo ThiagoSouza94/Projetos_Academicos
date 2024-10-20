@@ -1,0 +1,20 @@
+insert into lojavinhos.vinho values
+	(001, "Cabernet Sauvignon", "Tinto", 2015, "Um dos Melhores vinhos do Mundo em 2019 segundo Wine Style Award, custando em torno de US$645", 001),
+    (002, "La Tâche Grand Cru", "Suave", 2000, "Saboroso e suave, perfeito para ocasiões especiais, custando em torno de US$4,5 mil", 002),
+    (003, "Sangiovese Toscana", "Branco", 2006, "Feito com uvas brancas com seu sabor adocicado, custando em torno de US$475", 003),
+    (004, "Sauternes", "Rosé", 2001, "Excelente vinho para comemoraçoes festivas, custando em torno de US$800", 004),
+    (005, "Very Old Single Harvest Port", "Licoroso", 1968, "Com uma concentração maior, uma ou duas taças são suficientes, custando em torno de US$250", 005);
+    
+insert into lojavinhos.regiao values
+	(001, "Napa Valley", "Califórnia, EUA"),
+    (002, "Côte de Nuits", "Burgundy, França"),
+    (003, "Sauternes", "França"),
+    (004, "Porto", "Portugal"),
+    (005, "Grands-Échezeaux Grand Cru", "França");
+    
+insert into lojavinhos.vinicula values
+	(001, "Zuccardi Valle de Uco", "A melhor Vinicula do mundo em 2021", "32248011", "ZVU@hotmail.com", 001),
+    (002, "Bodega Garzón", "Bodega Garzón é uma das Bodegas com mais tradição. Vinhos de qualidade para o desfrute de todos os sentidos.", "32248022", "BG@hotmail.com", 002),
+    (003, "Domäne Wachau", "Nos tornamos uma das vinícolas mais importantes sob a gestão de Roman Horvath MW e Heinz Frischengruber.", "32248033", "DW@hotmail.com", 003),
+    (004, "Montes", "Vinícola Montes a 5ª melhor do mundo", "32248044", "MC@hotmail.com", 004),
+    (005, "Robert Mondavi", "Robert Mondavi é um ícone da viticultura, toda tradição do velho mundo com a modernidade.", "32248055", "RM@hotmail.com", 005);

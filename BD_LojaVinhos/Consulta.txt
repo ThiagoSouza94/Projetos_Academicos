@@ -1,0 +1,3 @@
+select a.nomeVinho, a.anoVinho, b.nomeVinicola, c.nomeRegiao
+from lojavinhos.vinho a,lojavinhos.vinicola b,lojavinhos.regiao c
+where a.codVinho = b.codVinicola and b.codVinicola = c.codRegiao
